@@ -10,8 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
 
-@NoArgsConstructor
-@AllArgsConstructor
+
 @FieldDefaults(level = AccessLevel.PRIVATE)//все поля приватные
 @Entity
 @Table(name = "courier")
@@ -20,6 +19,14 @@ public class CourierEntity {
     Integer courier;
     @Column()
     String courier_type;
+
+    public CourierEntity() {
+    }
+
+    public CourierEntity(Integer courier, String courier_type) {
+        this.courier = courier;
+        this.courier_type = courier_type;
+    }
 
     public void setCourier(Integer courier) {
         this.courier = courier;

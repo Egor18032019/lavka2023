@@ -1,6 +1,7 @@
 package ru.yandex.yandexlavka.utils;
 
 import ru.yandex.yandexlavka.schemas.CourierDto;
+import ru.yandex.yandexlavka.schemas.CreateCourierDto;
 import ru.yandex.yandexlavka.store.entities.CourierEntity;
 import ru.yandex.yandexlavka.store.entities.Regions;
 import ru.yandex.yandexlavka.store.entities.WorkingHoursEntity;
@@ -21,5 +22,11 @@ public class Converter {
 
         CourierDto courierDto = new CourierDto(item.getCourier(), CourierType.valueOf(item.getCourier_type()), regionsForDTO, workingHoursForDTO);
         return courierDto;
+    }
+
+    public static CourierEntity toCourierEntityFromCreateCourierDto(CreateCourierDto item) {
+
+        CourierEntity courierEntity = new CourierEntity(item.getCourier_id(), item.getCourier_type());
+        return courierEntity;
     }
 }
