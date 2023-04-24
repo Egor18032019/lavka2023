@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 @ToString
 public class CreateCourierDto {
-    private Integer courier_id;
+
     private Enum<CourierType> courier_type;
     private List<Integer> regions;
     private List<String> working_hours;
@@ -17,15 +17,10 @@ public class CreateCourierDto {
     public CreateCourierDto() {
     }
 
-    public CreateCourierDto(Integer courier_id, Enum<CourierType> courier_type, List<Integer> regions, List<String> working_hours) {
-        this.courier_id = courier_id;
+    public CreateCourierDto(Enum<CourierType> courier_type, List<Integer> regions, List<String> working_hours) {
         this.courier_type = courier_type;
         this.regions = regions;
         this.working_hours = working_hours;
-    }
-
-    public void setCourier_id(Integer courier_id) {
-        this.courier_id = courier_id;
     }
 
     public void setCourier_type(String courier_type) {
@@ -40,12 +35,12 @@ public class CreateCourierDto {
         this.working_hours = working_hours;
     }
 
-    public Integer getCourier_id() {
-        return courier_id;
-    }
 
     public String getCourier_type() {
         return courier_type.toString();
+    }
+    public Enum<CourierType> getCourier_type_Enum() {
+        return courier_type;
     }
 
     public List<Integer> getRegions() {

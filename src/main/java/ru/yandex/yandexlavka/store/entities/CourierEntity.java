@@ -1,9 +1,6 @@
 package ru.yandex.yandexlavka.store.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -11,16 +8,23 @@ import lombok.experimental.FieldDefaults;
 
 
 
-@FieldDefaults(level = AccessLevel.PRIVATE)//все поля приватные
 @Entity
 @Table(name = "courier")
+@FieldDefaults(level = AccessLevel.PRIVATE)//все поля приватные
 public class CourierEntity {
+    public static final int START_SEQ = 10;
     @Id
+    @SequenceGenerator(name = "global_seq", sequenceName = "global_seq", allocationSize = 1, initialValue = START_SEQ)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "global_seq")
     Integer courier;
     @Column()
     String courier_type;
 
     public CourierEntity() {
+    }
+
+    public CourierEntity(  String courier_type) {
+        this.courier_type = courier_type;
     }
 
     public CourierEntity(Integer courier, String courier_type) {

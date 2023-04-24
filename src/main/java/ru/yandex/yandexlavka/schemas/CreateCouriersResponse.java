@@ -8,20 +8,20 @@ import java.util.List;
 
 
 public class CreateCouriersResponse {
-    private List<CreateCourierDto> couriers;
+    private List<CourierDto> couriers;
 
     public CreateCouriersResponse() {
     }
 
-    public CreateCouriersResponse(List<CreateCourierDto> couriers) {
+    public CreateCouriersResponse(List<CourierDto> couriers) {
         this.couriers = couriers;
     }
 
-    public List<CreateCourierDto> getCouriers() {
+    public List<CourierDto> getCouriers() {
         return couriers;
     }
 
-    public void setCouriers(List<CreateCourierDto> couriers) {
+    public void setCouriers(List<CourierDto> couriers) {
         this.couriers = couriers;
     }
 }

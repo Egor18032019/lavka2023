@@ -2,18 +2,18 @@ package ru.yandex.yandexlavka.utils;
 
 import ru.yandex.yandexlavka.schemas.CourierDto;
 import ru.yandex.yandexlavka.schemas.CreateCourierDto;
-import ru.yandex.yandexlavka.store.entities.CourierEntity;
-import ru.yandex.yandexlavka.store.entities.Regions;
-import ru.yandex.yandexlavka.store.entities.WorkingHoursEntity;
+import ru.yandex.yandexlavka.schemas.CreateOrderDto;
+import ru.yandex.yandexlavka.schemas.OrderDto;
+import ru.yandex.yandexlavka.store.entities.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Converter {
-    public static CourierDto toCourierDtoFromCourierEntity(CourierEntity item, List<Regions> regions, List<WorkingHoursEntity> workingHours) {
+    public static CourierDto toCourierDtoFromCourierEntity(CourierEntity item, List<Region> regions, List<WorkingHoursEntity> workingHours) {
         List<Integer> regionsForDTO = new ArrayList<>();
         List<String> workingHoursForDTO = new ArrayList<>();
-        for (Regions region : regions) {
+        for (Region region : regions) {
             regionsForDTO.add(region.getNumberRegion());
         }
         for (WorkingHoursEntity workingHour : workingHours) {
@@ -26,7 +26,18 @@ public class Converter {
 
     public static CourierEntity toCourierEntityFromCreateCourierDto(CreateCourierDto item) {
 
-        CourierEntity courierEntity = new CourierEntity(item.getCourier_id(), item.getCourier_type());
+        CourierEntity courierEntity = new CourierEntity(item.getCourier_type());
         return courierEntity;
+    }
+
+    public static OrderEntity toOrderEntityFromCreateOrderRequest(CreateOrderDto item) {
+
+        OrderEntity orderEntity = new OrderEntity(item.getCost(), item.getRegions(), item.getWeight());
+        return orderEntity;
+    }
+
+    public static OrderDto toOrderDtoFromOrderEntity(OrderEntity orderFromEntity, List<String> hours) {
+        OrderDto orderDto = new OrderDto(orderFromEntity.getOrderID(), orderFromEntity.getCost(), orderFromEntity.getRegions(), orderFromEntity.getWeight(), hours);
+        return orderDto;
     }
 }

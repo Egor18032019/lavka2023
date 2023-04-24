@@ -6,12 +6,10 @@ import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ru.yandex.yandexlavka.exception.BadRequestException;
-import ru.yandex.yandexlavka.schemas.CourierDto;
-import ru.yandex.yandexlavka.schemas.CreateCourierRequest;
-import ru.yandex.yandexlavka.schemas.CreateCouriersResponse;
-import ru.yandex.yandexlavka.schemas.GetCouriersResponse;
+import ru.yandex.yandexlavka.schemas.*;
 import ru.yandex.yandexlavka.service.CourierService;
 
+import java.util.List;
 import java.util.Optional;
 
 @RequiredArgsConstructor
@@ -24,13 +22,12 @@ public class CourierController {
     @PostMapping(value = "/couriers")
     public CreateCouriersResponse createCourier(@RequestBody() CreateCourierRequest request) {
         System.out.println(request.toString());
-        courierService.saveCreateCourierRequest(request);
-
-        CreateCouriersResponse createCouriersResponse = new CreateCouriersResponse(request.getCouriers());
-        System.out.println(createCouriersResponse);
+        List<CourierDto> couriersDTO = courierService.saveCreateCourierRequest(request);
+        CreateCouriersResponse createCouriersResponse = new CreateCouriersResponse(couriersDTO);
         return createCouriersResponse;
-
     }
+
+
 
     @GetMapping(value = "/couriers")
     public GetCouriersResponse getCouriers(

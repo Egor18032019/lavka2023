@@ -8,8 +8,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 
-@NoArgsConstructor
-@AllArgsConstructor
+
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Entity
 @Table(name = "working_hours")
@@ -18,6 +17,14 @@ public class WorkingHoursEntity {
     @Column(name = "courier")
     Integer courier;
     String working_hours;
+
+    public WorkingHoursEntity() {
+    }
+
+    public WorkingHoursEntity(Integer courier, String working_hours) {
+        this.courier = courier;
+        this.working_hours = working_hours;
+    }
 
     public Integer getCourier() {
         return courier;

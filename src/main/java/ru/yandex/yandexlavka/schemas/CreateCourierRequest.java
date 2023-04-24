@@ -5,10 +5,16 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class CreateCourierRequest {
     private List<CreateCourierDto> couriers;
+
+    public CreateCourierRequest(List<CreateCourierDto> couriers) {
+        this.couriers = couriers;
+    }
+
+    public CreateCourierRequest() {
+    }
 
     public void setCouriers(List<CreateCourierDto> couriers) {
         this.couriers = couriers;
