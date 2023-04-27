@@ -1,0 +1,913 @@
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-21T162707.404.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T181822.200.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 33,
+      "regions": 33,
+      "weight": 33,
+      "delivery_hours": [
+        "33",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T181804.200.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T181740.404.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T181602.500.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T181133.200.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20 13:09:12",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T181121.400.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20 13:09:12.409593",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T181107.400.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20 13:09:12.409593 +00:00",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T181053.400.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 2,
+      "order_id": 10
+    }
+  ]
+}
+
+<> 2023-04-20T180947.200.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 33,
+      "order_id": 33
+    }
+  ]
+}
+
+<> 2023-04-20T180912.200.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20",
+      "courier_id": 33,
+      "order_id": 33,
+    }
+  ]
+}
+
+<> 2023-04-20T180729.400.json
+
+###
+
+POST http://localhost:8080/orders/complete
+Content-Type: application/json
+
+{
+  "complete_info": [
+    {
+      "complete_time": "2023-04-20 13:04:42.",
+      "courier_id": 33,
+      "order_id": 33,
+    }
+  ]
+}
+
+<> 2023-04-20T180710.400.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 33,
+      "regions": 33,
+      "weight": 33,
+      "delivery_hours": [
+        "33",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T180442.200.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 33,
+      "regions": 33,
+      "weight": 33,
+      "delivery_hours": [
+        "33",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T175107.200.json
+
+###
+
+POST http://localhost:8080/couriers
+Content-Type: application/json
+
+{
+  "couriers": [
+    {
+      "courier_type": "AUTO",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22","33"
+      ]   },    {
+      "courier_type": "BIKE",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22","33"
+      ]
+    }
+
+  ]
+}
+
+<> 2023-04-20T120516.200.json
+
+###
+
+POST http://localhost:8080/couriers
+Content-Type: application/json
+
+{
+  "couriers": [
+    {
+      "courier_type": "AUTO",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22","33"
+      ],    {
+      "courier_type": "BIKE",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22","33"
+      ]
+    }
+    }
+  ]
+}
+
+<> 2023-04-20T120453.400.json
+
+###
+
+POST http://localhost:8080/couriers
+Content-Type: application/json
+
+{
+  "couriers": [
+    {
+      "courier_type": "AUTO",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22","33"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T120409.200.json
+
+###
+
+POST http://localhost:8080/couriers
+Content-Type: application/json
+
+{
+  "couriers": [
+    {
+      "courier_type": "AUTO",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22","33"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T120339.200.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 33,
+      "regions": 33,
+      "weight": 33,
+      "delivery_hours": [
+        "33",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T120314.200.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T120246.200.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T120000.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115901.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115740.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115644.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115541.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115439.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115247.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115129.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T115103.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T114729.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T114617.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T114454.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T114237.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T113658.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T113404.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T113052.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T112830.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T112652.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T112202.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T111856.500.json
+
+###
+
+GET http://localhost:8080/orders
+
+<> 2023-04-20T111832.200.json
+
+###
+
+GET http://localhost:8080/orders
+
+<> 2023-04-20T111808.500.json
+
+###
+
+GET http://localhost:8080/orders
+
+<> 2023-04-20T111355.500.json
+
+###
+
+GET http://localhost:8080/orders
+
+<> 2023-04-20T111127.500.json
+
+###
+
+GET http://localhost:8080/orders
+
+<> 2023-04-20T111119.500.json
+
+###
+
+GET http://localhost:8080/orders
+
+<> 2023-04-20T111115.500.json
+
+###
+
+GET http://localhost:8080/orders
+
+<> 2023-04-20T111031.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T111026.500.json
+
+###
+
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "orders": [
+    {
+      "cost": 22,
+      "regions": 22,
+      "weight": 22,
+      "delivery_hours": [
+        "22",
+        "11"
+      ]
+    }
+  ]
+}
+
+<> 2023-04-20T110738.500.json
+
+###
+

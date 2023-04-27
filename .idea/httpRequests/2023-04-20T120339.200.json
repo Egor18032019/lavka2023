@@ -1,0 +1,15 @@
+{
+  "couriers": [
+    {
+      "courier_id": 8,
+      "courier_type": "AUTO",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22",
+        "33"
+      ]
+    }
+  ]
+}

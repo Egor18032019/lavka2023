@@ -1,0 +1,26 @@
+{
+  "couriers": [
+    {
+      "courier_id": 10,
+      "courier_type": "AUTO",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22",
+        "33"
+      ]
+    },
+    {
+      "courier_id": 11,
+      "courier_type": "BIKE",
+      "regions": [
+        22
+      ],
+      "working_hours": [
+        "22",
+        "33"
+      ]
+    }
+  ]
+}

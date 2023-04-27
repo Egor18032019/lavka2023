@@ -1,0 +1,24 @@
+{
+  "orders": [
+    {
+      "order_id": 2,
+      "cost": 2,
+      "regions": 2,
+      "weight": 22,
+      "delivery_hours": [
+        "22:30",
+        "22:30"
+      ]
+    },
+    {
+      "order_id": 3,
+      "cost": 3,
+      "regions": 3,
+      "weight": 33,
+      "delivery_hours": [
+        "22:00",
+        "22:00"
+      ]
+    }
+  ]
+}
