@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\fragments\landing-hero\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\fragments\landing-main\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\fragments\landing-state-action\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\landing\app\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\landing\index\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\landing\state-action\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\ui\layout\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\ui\link\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\ui\text\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\frontend\ui\theme\package.json" />
+    <excludedPredefinedLibrary name="Dependencies from 22300-egorprishedko-mail.ru-113\academy-test\package.json" />
+  </component>
+</project>

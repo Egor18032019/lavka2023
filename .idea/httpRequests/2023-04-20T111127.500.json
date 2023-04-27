@@ -1,6 +1,0 @@
-{
-  "timestamp": 1681971087541,
-  "status": 500,
-  "error": "Internal Server Error",
-  "path": "/orders"
-}
